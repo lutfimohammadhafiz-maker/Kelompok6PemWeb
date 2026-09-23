@@ -1,5 +1,5 @@
 /* =========================
-   CSS MODERN - SISTEM PEMASARAN PRODUK DESA
+   CSS DASAR
    ========================= */
 
 * {
@@ -8,187 +8,148 @@
     padding: 0;
 }
 
-:root {
-    --primary: #166534;
-    --primary-dark: #14532d;
-    --primary-light: #22c55e;
-    --accent: #f59e0b;
-    --bg: #f5f7f5;
-    --surface: #ffffff;
-    --text: #1f2937;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    min-height: 100vh;
-    background: linear-gradient(180deg, #f0fdf4 0%, var(--bg) 260px);
-    color: var(--text);
+    background-color: #eef2f3;
+    color: #333333;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
-h1, h2, h3, p, a, label, input, select, textarea, button, th, td {
+h1,
+h2,
+h3,
+p,
+a {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* =========================
    HEADER
    ========================= */
 
 header {
-    background: linear-gradient(135deg, #14532d 0%, #166534 55%, #15803d 100%);
+    background-color: #1b5e20;
     color: white;
     text-align: center;
-    padding: 48px 20px 42px;
-    border-radius: 0 0 28px 28px;
-    box-shadow: 0 12px 30px rgba(20, 83, 45, 0.22);
+    padding: 30px 20px;
+    border-radius: 0 0 12px 12px;
 }
 
 header h1 {
-    font-size: clamp(1.6rem, 4vw, 2.45rem);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #333333;
+    margin-bottom: 8px;
 }
 
 header p {
-    max-width: 760px;
-    margin: 0 auto;
-    color: #dcfce7;
-    font-size: 1rem;
+    font-size: 16px;
 }
+
 
 /* =========================
    NAVIGASI
    ========================= */
 
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(10px);
-    padding: 14px 18px;
-    border-bottom: 1px solid rgba(229, 231, 235, 0.95);
-    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #cfd8dc;
+    margin-bottom: 20px;
 }
 
 nav a {
-    color: var(--primary);
+    color: #1b5e20;
     text-decoration: none;
-    font-weight: 700;
-    padding: 10px 18px;
-    border: 1px solid #bbf7d0;
-    border-radius: 999px;
-    background: #f0fdf4;
-    transition: 0.25s ease;
+    border: 1px solid #1b5e20;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin: 0 5px;
+    display: inline-block;
 }
 
-nav a:hover,
-nav a:focus {
-    background: var(--primary);
+nav a:hover {
+    background-color: #1b5e20;
     color: white;
-    border-color: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(22, 101, 52, 0.18);
 }
+
 
 /* =========================
    KONTEN UTAMA
    ========================= */
 
 main {
-    width: min(94%, 1150px);
-    margin: 32px auto 50px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
 }
 
 section {
-    background: var(--surface);
-    padding: clamp(20px, 4vw, 32px);
-    margin-bottom: 24px;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    box-shadow: var(--shadow);
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
 }
 
 section h2 {
-    color: var(--primary-dark);
-    font-size: 1.45rem;
-    margin-bottom: 10px;
+    color: #1b5e20;
+    margin-bottom: 12px;
 }
 
 section h3 {
-    color: var(--primary);
-    margin-bottom: 7px;
+    color: #2e7d32;
+    margin-bottom: 5px;
 }
 
-section p {
-    color: #4b5563;
-}
-
-ul, ol {
-    margin: 14px 0 0 22px;
+ul,
+ol {
+    margin-left: 25px;
 }
 
 li {
-    margin-bottom: 10px;
-    color: #374151;
+    margin-bottom: 8px;
 }
+
 
 /* =========================
    FORM PRODUK
    ========================= */
 
 .form-container {
-    background: linear-gradient(180deg, #ffffff, #fbfffc);
-    border: 1px solid #bbf7d0;
-    border-radius: 18px;
-    padding: clamp(18px, 4vw, 30px);
+    background-color: white;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    padding: 25px;
 }
 
 fieldset {
-    border: 1px solid var(--border);
-    border-radius: 14px;
+    border: 1px solid #9ca3af;
+    border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 legend {
-    font-weight: 800;
-    color: var(--primary);
+    font-weight: bold;
+    color: #1b5e20;
     padding: 0 8px;
 }
 
 label {
-    display: block;
-    font-weight: 700;
+    font-weight: bold;
     color: #374151;
-    margin-bottom: 6px;
 }
 
 .input-control {
     width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #d1d5db;
-    border-radius: 10px;
-    background: white;
-    color: var(--text);
-    font-size: 0.98rem;
-    transition: 0.2s ease;
-}
-
-.input-control::placeholder {
-    color: #9ca3af;
+    padding: 10px;
+    border: 1px solid #9ca3af;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 textarea.input-control {
@@ -197,214 +158,94 @@ textarea.input-control {
 
 .input-control:focus {
     outline: none;
-    border-color: var(--primary-light);
-    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.14);
-}
-
-#btn-submit,
-button[type="reset"] {
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 800;
-    transition: 0.2s ease;
+    border: 2px solid #3b82f6;
 }
 
 #btn-submit {
-    background: linear-gradient(135deg, #15803d, #16a34a);
-}
-
-#btn-submit:hover,
-button[type="reset"]:hover {
-    transform: translateY(-2px);
+    background-color: #16a34a;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 #btn-submit:hover {
-    box-shadow: 0 8px 18px rgba(22, 163, 74, 0.25);
+    background-color: #15803d;
 }
 
 button[type="reset"] {
-    background: #6b7280;
+    background-color: #6b7280;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
     margin-left: 8px;
 }
 
 button[type="reset"]:hover {
-    background: #4b5563;
+    background-color: #4b5563;
 }
 
-/* =========================
-   PENCARIAN DASHBOARD
-   ========================= */
-
-.search-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 22px 0 10px;
-    padding: 8px 12px;
-    border: 1px solid #d1d5db;
-    border-radius: 14px;
-    background: #f9fafb;
-    transition: 0.2s ease;
-}
-
-.search-box:focus-within {
-    border-color: var(--primary-light);
-    background: white;
-    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
-}
-
-.search-icon {
-    font-size: 1.2rem;
-}
-
-.search-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 9px 0;
-    font-size: 1rem;
-    color: var(--text);
-}
-
-.search-info {
-    color: var(--muted);
-    font-size: 0.92rem;
-    margin-bottom: 16px;
-}
 
 /* =========================
    DASHBOARD / TABEL
    ========================= */
 
-.table-wrapper {
-    overflow-x: auto;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-}
-
 .data-table {
     width: 100%;
-    min-width: 800px;
     border-collapse: collapse;
     background-color: white;
 }
 
 table.data-table th,
 table.data-table td {
-    border-bottom: 1px solid var(--border);
-    padding: 14px 13px;
+    border-bottom: 1px solid #d1d5db;
+    padding: 12px;
     text-align: left;
 }
 
 table.data-table th {
-    background: linear-gradient(135deg, #14532d, #166534);
+    background-color: #1e3a5f;
     color: white;
     text-transform: uppercase;
-    font-size: 0.82rem;
-    letter-spacing: 0.4px;
-    white-space: nowrap;
-}
-
-.data-table tbody tr {
-    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .data-table tbody tr:nth-child(even) {
-    background-color: #f8fafc;
+    background-color: #f1f5f9;
 }
 
 .data-table tbody tr:hover {
-    background-color: #f0fdf4;
+    background-color: #e2e8f0;
 }
 
-.data-table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.empty-row td {
-    text-align: center !important;
-    padding: 30px !important;
-    color: var(--muted);
-}
 
 /* =========================
-   BADGE KATEGORI
+   BADGE NILAI / STATUS
    ========================= */
 
 .nilai-badge {
     display: inline-block;
-    background: #ecfdf5;
-    color: #166534;
-    border: 1px solid #bbf7d0;
-    border-radius: 999px;
-    padding: 5px 10px;
-    font-size: 0.85rem;
-    font-weight: 800;
+    background-color: rgba(22, 163, 74, 0.15);
+    color: #15803d;
+    border: 1px solid #16a34a;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-weight: bold;
 }
 
-/* =========================
-   ARTIKEL PRODUK UNGGULAN
-   ========================= */
-
-article {
-    padding: 18px;
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--primary-light);
-    border-radius: 14px;
-    background: linear-gradient(90deg, #f8fafc, #ffffff);
-}
 
 /* =========================
    FOOTER
    ========================= */
 
 footer {
-    background: #0f3d22;
-    color: #dcfce7;
+    background-color: #1b5e20;
+    color: white;
     text-align: center;
-    padding: 24px 18px;
+    padding: 20px;
     margin-top: 30px;
-}
-
-/* =========================
-   RESPONSIVE
-   ========================= */
-
-@media (max-width: 700px) {
-    header {
-        padding: 34px 16px 30px;
-        border-radius: 0 0 20px 20px;
-    }
-
-    nav {
-        padding: 11px;
-    }
-
-    nav a {
-        flex: 1 1 140px;
-        text-align: center;
-        padding: 9px 12px;
-    }
-
-    main {
-        width: 94%;
-        margin-top: 22px;
-    }
-
-    section {
-        padding: 18px;
-        border-radius: 16px;
-    }
-
-    .form-container {
-        padding: 15px;
-    }
-
-    fieldset {
-        padding: 15px;
-    }
 }
