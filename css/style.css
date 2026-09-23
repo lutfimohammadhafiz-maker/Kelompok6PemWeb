@@ -1,0 +1,251 @@
+/* =========================
+   CSS DASAR
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eef2f3;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 0 0 12px 12px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #333333;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+/* =========================
+   NAVIGASI
+   ========================= */
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #cfd8dc;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #1b5e20;
+    text-decoration: none;
+    border: 1px solid #1b5e20;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #1b5e20;
+    color: white;
+}
+
+
+/* =========================
+   KONTEN UTAMA
+   ========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #1b5e20;
+    margin-bottom: 12px;
+}
+
+section h3 {
+    color: #2e7d32;
+    margin-bottom: 5px;
+}
+
+ul,
+ol {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   FORM PRODUK
+   ========================= */
+
+.form-container {
+    background-color: white;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+fieldset {
+    border: 1px solid #9ca3af;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1b5e20;
+    padding: 0 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #374151;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9ca3af;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea.input-control {
+    resize: vertical;
+}
+
+.input-control:focus {
+    outline: none;
+    border: 2px solid #3b82f6;
+}
+
+#btn-submit {
+    background-color: #16a34a;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-submit:hover {
+    background-color: #15803d;
+}
+
+button[type="reset"] {
+    background-color: #6b7280;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+button[type="reset"]:hover {
+    background-color: #4b5563;
+}
+
+
+/* =========================
+   DASHBOARD / TABEL
+   ========================= */
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table.data-table th,
+table.data-table td {
+    border-bottom: 1px solid #d1d5db;
+    padding: 12px;
+    text-align: left;
+}
+
+table.data-table th {
+    background-color: #1e3a5f;
+    color: white;
+    text-transform: uppercase;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+.data-table tbody tr:hover {
+    background-color: #e2e8f0;
+}
+
+
+/* =========================
+   BADGE NILAI / STATUS
+   ========================= */
+
+.nilai-badge {
+    display: inline-block;
+    background-color: rgba(22, 163, 74, 0.15);
+    color: #15803d;
+    border: 1px solid #16a34a;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
